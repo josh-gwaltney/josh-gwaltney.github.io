@@ -1,0 +1,203 @@
+html {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    color: $primary-text-color;
+    font: $font-sans-serif;
+    height: 100%;
+    line-height: 1.846153846;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.top-bar {
+  background: $white;
+  box-shadow: 0 1px 3px 0 $disabled-text-color;
+  height: 64px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  -moz-box-shadow: 0 1px 3px 0 $disabled-text-color;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: block;
+  position: relative;
+}
+
+.nav li a {
+  position: relative;
+}
+
+.nav.horizontal li {
+  float: left;
+}
+
+
+.header {
+  position: relative;
+  @include clearfix();
+}
+
+.header .left {
+  background: $white;
+  position: absolute;
+}
+
+.header .right {
+  background: $white;
+  float: right;
+}
+
+#left-panel {
+  background: map-get($grey, 'dark');
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 64px;
+  width: 64px;
+  z-index: 101;
+}
+
+#left-panel.collapsed{
+
+}
+
+.main {
+  background: map-get($grey, 'light');
+  height: 100%;
+  //overflow: hidden;
+  padding: 64px 0 0 64px ;
+  width: 100%;
+  @include clearfix();
+}
+
+.title {
+  background: $grey-light1;
+  border-bottom: 1px solid $divider-color;
+  padding: $global-gutter;
+  @include clearfix();
+}
+
+.content {
+  height: 100%;
+  left: 0;
+  overflow-x: auto;
+  padding: $global-gutter;
+  position: relative;
+  width: 100%;
+  @include clearfix();
+}
+
+.footer {
+  background: $white;
+  bottom: 0;
+  padding: $global-gutter;
+  position: absolute;
+  right: 0;
+  width: 100%
+}
+
+header.title {
+  background: $grey-light1;
+  border-bottom: 1px solid $divider-color;
+  padding: 20px;
+}
+
+header.title h3{
+  color: $primary-text-color;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 4px;
+  padding: 0;
+}
+
+#right-panel {
+  background: $white;
+  box-shadow: 0 8px 14px $disabled-text-color;
+  display: block;
+  height: 100%;
+  position: fixed;
+  transition: transform 0.3s;
+  width: 360px;
+  z-index: 300;
+  -webkit-transition: -webkit-transform 0.3s;
+}
+
+.slide-right {
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+}
+
+.slide-right.is-active {
+  transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.bottom-panel {
+
+}
+
+@media screen and (max-width: 480px){
+  .top-bar {
+    position: relative;
+
+    &:before{
+      box-shadow: 0 1px 3px 0 $disabled-text-color;
+      content: '';
+      height: 64px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 0;
+      -moz-box-shadow: 0 1px 3px 0 $disabled-text-color;
+    }
+  }
+
+  .header .left {
+    border-bottom: 1px solid $disabled-text-color;
+    height: 64px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header .right {
+    box-shadow: 0 1px 3px 0 $disabled-text-color;
+    float: none;
+    height: 65px; // remove later
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    -moz-box-shadow: 0 1px 3px 0 $disabled-text-color;
+  }
+
+  #left-panel {
+    display: none;
+  }
+
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+

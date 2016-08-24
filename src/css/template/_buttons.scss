@@ -1,0 +1,123 @@
+$button-styles: (
+  default
+  flat,
+  raised,
+  floating
+) !default;
+
+@mixin button-base {
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  margin: 0;
+  outline: 0;
+  padding: 4.5px 14px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+$button-types: (
+  'flat',
+  'raised',
+  'floating',
+  'toggle',
+);
+
+@mixin flat($color) {
+  color: $color;
+}
+
+@mixin button {
+  .button {
+    @include button-base;
+    @each $name, $color in $palette {
+          &.#{$name} {
+            background: map-get($color, 'main');
+            &:hover {
+              background: map-get($color, 'dark');
+            }
+            &.flat {
+              background: $white;
+              color: map-get($color, 'main');
+              font-weight: 500;
+              padding: 4.5px 7px;
+              &:hover {
+                background: $divider-color;
+                color: map-get($color, 'dark');
+              }
+            }
+            &.raised {
+              box-shadow: 0 1px 3px rgba($black, .33);
+              transition: box-shadow ease-out .15s;
+              &:hover {
+                box-shadow: 0 3px 8px rgba($black, .33);
+              }
+            }
+            &.floating {
+              border-radius: 999px;
+              box-shadow: 0 1px 3px rgba($black, .33);
+              height: 44px;
+              padding: 0;
+              text-align: center;
+              transition: box-shadow ease-out .15s;
+              width: 44px;
+              vertical-align: middle;
+              &:hover {
+                background: map-get($color, dark);
+                box-shadow: 0 3px 8px rgba($black, .33);
+              }
+              & .material-icons {
+                color: $white !important;
+                line-height: 42px;
+                margin: 0;
+                top: 0px;
+              }
+            }
+            &.toggle {
+              background: $white;
+              font-weight: 500;
+              height: 36px;
+              padding: 0;
+              text-align: center;
+              width: 36px;
+              vertical-align: middle;
+              &:hover {
+                border-radius: 999px;
+                background: $divider-color;
+                color: map-get($color, 'dark');
+              }
+              & .material-icons {
+                color: map-get($color, 'main');
+                line-height: 34px;
+              }
+            }
+          }
+        }
+  }
+}
+
+@include button();
+
+
+@media screen and (max-width: $small){
+
+}
+
+@media screen and (max-width: $medium){
+
+}
+
+@media screen and (max-width: $large){
+
+}
+
+@media screen and (max-width: $x-large){
+
+}

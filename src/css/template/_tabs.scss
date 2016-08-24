@@ -1,0 +1,63 @@
+.nav-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav-tabs.left {
+  border-right: 1px solid $divider-color;
+  float: left;
+}
+
+.nav-tabs.top {
+  border-bottom: 1px solid $divider-color;
+  width: 100%;
+}
+
+.left li {
+  display: block;
+}
+
+.top li {
+  display: table-cell;
+  width: 1%;
+}
+
+.left > li > a {
+  line-height: 52px;
+  padding: 0 25px 0 15px;
+}
+
+.top > li > a {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.nav-tabs li {
+  float: none;
+}
+
+.nav-tabs > li > a {
+  color: map-get($black-text, 'secondary');
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0;
+  position: relative;
+  text-transform: uppercase;
+  veritcal-align: middle;
+}
+
+.nav-tabs .active > a {
+  border-bottom: 1px solid map-get($primary, 'main');
+  color: map-get($primary, 'main');
+  margin-bottom: -1px;
+}
+.nav-tabs > li > a:hover {
+  background: map-get($black-text, 'divider');
+  text-decoration: none;
+}
+
+.tab-content {
+  overflow: auto;
+}

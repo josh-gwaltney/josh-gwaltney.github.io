@@ -1,0 +1,46 @@
+.card {
+  border: 0;
+  box-shadow: 0 1px 3px 0px rgba($black, .33);
+  margin-bottom: 24px;
+}
+
+.card-white {
+  background: $white;
+}
+
+.card .card-heading {
+  line-height: 52px;
+  min-height: 56px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.card-heading .card-title {
+  color: $primary-text-color;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 17px;
+  padding: 11px 24px;
+  vertical-align: middle;
+}
+
+.card .card-body {
+  padding: 24px;
+  position: relative;
+}
+
+.card:before,
+.card:after {
+  content: " ";
+  display: table;
+}
+
+.card-body:before,
+.card-body:after {
+  content: " ";
+  display: table;
+}
+
+.card:after{
+  clear: both;
+}

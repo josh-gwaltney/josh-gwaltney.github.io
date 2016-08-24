@@ -1,0 +1,29 @@
+.breadcrumb {
+  overflow: hidden;
+}
+
+.breadcrumb ol {
+  background: 0 0;
+  border-radius: 4px;
+  float: left;
+  font-size: 13px;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.breadcrumb ol li {
+  color: $secondary-text-color;
+  display: inline-block;
+}
+
+.breadcrumb ol li a {
+  color: $secondary-text-color;
+}
+
+.breadcrumb ol li + li:before{
+  padding: 0 5px;
+  color: $disabled-text-color;
+  content: "/\00a0";
+}

@@ -1,0 +1,97 @@
+@mixin make-container($gutter: $grid-gutter){
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    @include clearfix;
+}
+
+@mixin make-row($gutter: $grid-gutter){
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+    @include clearfix;
+}
+
+@mixin make-col($col, $gutter: $grid-gutter){
+    .col-#{$col}{
+        float: left;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        position: relative;
+        width: percentage($col / $grid-columns)
+    }
+}
+
+@mixin make-column($col, $size, $max){
+    .col-#{$size}-#{$col}{
+        float: left;
+        padding-left: $grid-gutter;
+        padding-right: $grid-gutter;
+        position: relative;
+        width: percentage($col / $max)
+    }
+}
+
+@mixin make-col-push($col){
+    .col-#{$col}-push{
+        left: percentage($col / $grid-columns);
+    }
+}
+
+@mixin make-col-pull($col){
+    .col-#{$col}-pull{
+        right: percentage($col / $grid-columns);
+    }
+}
+
+.container {
+    height: 100%;
+    @include make-container($grid-gutter);
+
+    @media (min-width: $small){
+        width: 720px;
+    }
+    @media (min-width: $medium){
+        width: 940px;
+    }
+    @media (min-width: $large){
+        width: 1170px;
+    }
+}
+
+.container-fluid {
+    @include make-container($grid-gutter);
+    height: 100%;
+}
+
+.row {
+    @include make-row($grid-gutter)
+}
+
+$small-columns: 12;
+$medium-columns: 12;
+$large-columns: 12;
+
+@media screen and (min-width: 0){
+  @for $idx from 1 through $small-columns{
+        @include make-column($idx, 'sm', $small-columns);
+  }
+}
+
+@media screen and (min-width: $medium) {
+  @for $idx from 1 through $medium-columns {
+    @include make-column($idx, 'md', $medium-columns);
+  }
+}
+
+@media screen and (min-width: $large) {
+  @for $idx from 1 through $large-columns {
+    @include make-column($idx, 'lg', $large-columns);
+  }
+}
+
+//@for $i from 1 through $small-columns{
+//    @include make-col($i, 'small', $max-columns);
+//    @include make-col-push($i);
+//    @include make-col-pull($i);
+//}

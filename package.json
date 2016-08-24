@@ -1,0 +1,42 @@
+{
+  "name": "josh-gwaltney.github.io",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "compression": "latest",
+    "morgan": "latest",
+    "serve-favicon": "latest"
+  },
+  "devDependencies": {
+    "babel-loader": "latest",
+    "babel-preset-es2015": "latest",
+    "browser-sync": "latest",
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "debug": "latest",
+    "del": "latest",
+    "glob": "latest",
+    "gulp": "latest",
+    "gulp-babel": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-filter": "latest",
+    "gulp-inject": "latest",
+    "gulp-jscs": "latest",
+    "gulp-jshint": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-load-utils": "latest",
+    "gulp-plumber": "latest",
+    "gulp-nodemon": "latest",
+    "gulp-notify": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "mocha": "latest"
+  }
+}

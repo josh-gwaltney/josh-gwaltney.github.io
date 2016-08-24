@@ -1,0 +1,20 @@
+{
+  "paths": {
+    "dist": "./dist/",
+    "src": {
+      "assets": "./src/assets/",
+      "css": "./src/css/site.scss",
+      "js": "./src/js/**/*.js"
+    },
+    "test": {
+      "client": "./test/",
+      "vendorjs": [
+        "./node_modules/mocha/mocha.js",
+        "./node_modules/chai/chai.js"
+        ],
+      "vendorcss": [
+        "./node_modules/mocha/mocha.css"
+      ]
+    }
+  }
+}

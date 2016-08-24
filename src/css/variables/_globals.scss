@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+@function color-collection ($main-col, $bright-col, $light-col, $dark-col){
+  $collection: (
+    main: $main-col,
+    bright: $bright-col,
+    light: $light-col,
+    dark: $dark-col,
+  );
+
+  @return $collection;
+}
+
+@function text-collection($base){
+        @if (lightness($base) < 50){
+            @return (
+                primary: rgba($base, .87),
+                secondary: rgba($base, .54),
+                disabled: rgba($base, .38),
+                divider: rgba($base, .12)
+            )
+        } @else {
+            @return (
+                primary: $base,
+                secondary: rgba($base, .70),
+                disabled: rgba($base, .50),
+                divider: rgba($base, .12)
+            )
+        }
+}
+
+$black-text: text-collection($black);
+$white-text: text-collection($white);
+
+@function pick-text-color($background){
+  $dark: text-collection($black);
+  $light: text-collection($white);
+
+  @if(lightness($background) < 50){
+    @return $dark;
+  } @else {
+    @return $light;
+  }
+}
+
+@function pick-col($bg, $color){
+  @if (lightness($bg) < 50){
+            @return (
+              color: $color
+            )
+        } @else {
+            @return (
+              background: $color
+            )
+        }
+}
+$primary: color-collection($blue-grey-500, $blue-grey-50, $blue-grey-100, $blue-grey-700);
+$accent: color-collection($teal-500, $teal-50, $teal-100, $teal-700);
+$info: color-collection($blue-500, $blue-50, $blue-100, $blue-700);
+$success: color-collection($green-500, $green-50, $green-100, $green-700);
+$warning: color-collection($orange-500, $orange-50, $orange-100, $orange-700);
+$danger: color-collection($red-500, $red-50, $red-100, $red-700);
+$grey: color-collection($grey-500, $grey-50, $grey-100, $grey-900);
+
+$palette: (
+    primary: $primary,
+    accent: $accent,
+    info: $info,
+    success: $success,
+    warning: $warning,
+    danger: $danger
+    //gray: color-collection($grey-500, $grey-50, $grey-100, $grey-700),
+    //menu: color-collection($grey-500, $grey-50, $grey-100, $grey-700)
+) !default;
+
+$light-grey: #000000;
+$medium-grey: #000000;
+$dark-grey: #000000;
+
+$grey-dark1: #212121;
+$grey-dark2: #212121;
+$grey-dark3: #424242;
+
+$grey-light1: #E0E0E0;
+$grey-light2: #F5F5F5;
+$grey-light3: #FAFAFA;
+
+$global-font-size: 13px !default;
+$global-line-height: 1.5 !default;
+$global-margin: 1rem !default;
+$global-padding: 1rem !default;
+$global-radius: 0 !default;
+
+// text
+$font-sans-serif: "RobotoDraft", "Roboto", sans-serif !default;
+$font-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-mono: monospace !default;
+$font-size: 1em !default;
+$line-height: 1em !default;
+
+$primary-text-color: rgba($black, .87);
+$secondary-text-color: rgba($black, .54);
+$disabled-text-color: rgba($black, .38);
+$divider-color: rgba($black, .12);
+
+$grid-columns: 12 !default;
+$grid-gutter: 16px !default;
+
+$global-gutter: 16px !default;
+
+// breakpoints
+$small: 480px !default;
+$medium: 760px !default;
+$large: 960px !default;
+$x-large: 1280px !default;
+
+$widths: $small, $medium, $large, $x-large;
+
+$border-radius: 4px !default;
+
+@mixin clearfix(){
+    &:before,
+    &:after{
+        content: " ";
+        display: table
+    }
+    &:after{
+        clear: both;
+    }
+}

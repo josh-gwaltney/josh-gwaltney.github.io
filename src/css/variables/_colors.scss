@@ -1,0 +1,244 @@
+// palettes
+
+// red
+$red-50: #FFEBEE !default;
+$red-100: #FFCDD2 !default;
+$red-200: #EF9A9A !default;
+$red-300: #E57373 !default;
+$red-400: #EF5350 !default;
+$red-500: #F44336 !default;
+$red-600: #E53935 !default;
+$red-700: #D32F2F !default;
+$red-800: #C62828 !default;
+$red-900: #B71C1C !default;
+
+$red-a100: #FF8A80 !default;
+$red-a200: #FF5252 !default;
+$red-a400: #FF1744 !default;
+$red-a700: #D50000 !default;
+
+// pink
+$pink-50: #FCE4EC !default;
+$pink-100: #F8BBD0 !default;
+$pink-200: #F48FB1 !default;
+$pink-300: #E91E63 !default;
+$pink-400: #E91E63 !default;
+$pink-500: #E91E63 !default;
+$pink-600: #E91E63 !default;
+$pink-700: #E91E63 !default;
+$pink-800: #E91E63 !default;
+$pink-900: #E91E63 !default;
+
+$pink-a100: #E91E63 !default;
+$pink-a200: #E91E63 !default;
+$pink-a300: #E91E63 !default;
+$pink-a700: #E91E63 !default;
+
+// purple
+$purple-50: #9C2780 !default;
+$purple-100: #9C2780 !default;
+$purple-200: #9C2780 !default;
+$purple-300: #9C2780 !default;
+$purple-400: #9C2780 !default;
+$purple-500: #9C2780 !default;
+$purple-600: #9C2780 !default;
+$purple-700: #9C2780 !default;
+$purple-800: #9C2780 !default;
+$purple-000: #9C2780 !default;
+
+$purple-a100: #9C2780 !default;
+$purple-a200: #9C2780 !default;
+$purple-a300: #9C2780 !default;
+$purple-a700: #9C2780 !default;
+
+// deep purple
+$deep-purple-50: #673AB7 !default;
+$deep-purple-100: #673AB7 !default;
+$deep-purple-200: #673AB7 !default;
+$deep-purple-300: #673AB7 !default;
+$deep-purple-400: #673AB7 !default;
+$deep-purple-500: #673AB7 !default;
+$deep-purple-600: #673AB7 !default;
+$deep-purple-700: #673AB7 !default;
+$deep-purple-800: #673AB7 !default;
+$deep-purple-900: #673AB7 !default;
+
+$deep-purple-a100: #673AB7 !default;
+$deep-purple-a200: #673AB7 !default;
+$deep-purple-a300: #673AB7 !default;
+$deep-purple-a700: #673AB7 !default;
+
+// indigo
+$indigo-500: #3F51B5 !default;
+$indigo-500: #3F51B5 !default;
+$indigo-500: #3F51B5 !default;
+$indigo-500: #3F51B5 !default;
+$indigo-500: #3F51B5 !default;
+$indigo-500: #3F51B5 !default;
+$indigo-500: #3F51B5 !default;
+$indigo-500: #3F51B5 !default;
+$indigo-500: #3F51B5 !default;
+$indigo-500: #3F51B5 !default;
+
+// blue
+$blue-50: #E3F2FD !default;
+$blue-100: #BBD3FB !default;
+$blue-200: #90CAF9 !default;
+$blue-200: #64B5F6 !default;
+$blue-400: #42A5F5 !default;
+$blue-500: #2196F3 !default;
+$blue-600: #1E88E5 !default;
+$blue-700: #1976D2 !default;
+$blue-800: #1565C0 !default;
+$blue-900: #0D47A1 !default;
+
+$blue-a100: #82B1FF !default;
+$blue-a200: #448AFF !default;
+$blue-a300: #2979FF !default;
+$blue-a400: #2962FF !default;
+
+// light blue
+$light-blue-500: #03A9F4 !default;
+$light-blue-500: #03A9F4 !default;
+$light-blue-500: #03A9F4 !default;
+$light-blue-500: #03A9F4 !default;
+$light-blue-500: #03A9F4 !default;
+$light-blue-500: #03A9F4 !default;
+$light-blue-500: #03A9F4 !default;
+$light-blue-500: #03A9F4 !default;
+$light-blue-500: #03A9F4 !default;
+$light-blue-500: #03A9F4 !default;
+
+
+// cyan
+$cyan-500: #00BCD4 !default;
+$cyan-500: #00BCD4 !default;
+$cyan-500: #00BCD4 !default;
+$cyan-500: #00BCD4 !default;
+$cyan-500: #00BCD4 !default;
+$cyan-500: #00BCD4 !default;
+$cyan-500: #00BCD4 !default;
+$cyan-500: #00BCD4 !default;
+$cyan-500: #00BCD4 !default;
+$cyan-500: #00BCD4 !default;
+
+// teal
+$teal-50: #E0F2F1 !default;
+$teal-100: #B2DFDB !default;
+$teal-200: #80CBC4 !default;
+$teal-300: #4DB6AC !default;
+$teal-400: #26A69A !default;
+$teal-500: #009688 !default;
+$teal-600: #00897B !default;
+$teal-700: #00796B !default;
+$teal-800: #00695C !default;
+$teal-900: #004D40 !default;
+
+$teal-a100: #A7FFEB !default;
+$teal-a200: #64FFDA !default;
+$teal-a300: #1DE9B6 !default;
+$teal-a400: #00BFA5 !default;
+
+// green
+$green-50: #E8F5E9 !default;
+$green-100: #C8E6C9 !default;
+$green-200: #A5D6A7 !default;
+$green-300: #81C784 !default;
+$green-400: #66BB6A !default;
+$green-500: #4CAF50 !default;
+$green-600: #43A047 !default;
+$green-700: #388E3C !default;
+$green-800: #2E7D32 !default;
+$green-900: #1B5E20 !default;
+
+$green-a100: #B9F6CA !default;
+$green-a200: #69F0AE !default;
+$green-a300: #00E676 !default;
+$green-a400: #00C853 !default;
+
+// light green
+$light-green-50: #8BC34A !default;
+$light-green-100: #8BC34A !default;
+$light-green-200: #8BC34A !default;
+$light-green-300: #8BC34A !default;
+$light-green-400: #8BC34A !default;
+$light-green-500: #8BC34A !default;
+$light-green-600: #8BC34A !default;
+$light-green-700: #8BC34A !default;
+$light-green-800: #8BC34A !default;
+$light-green-900: #8BC34A !default;
+
+$light-green-a100: #8BC34A !default;
+$light-green-a200: #8BC34A !default;
+$light-green-a300: #8BC34A !default;
+$light-green-a400: #8BC34A !default;
+
+// lime
+$lime-50: #CDDC39 !default;
+$lime-100: #CDDC39 !default;
+$lime-200: #CDDC39 !default;
+$lime-300: #CDDC39 !default;
+$lime-400: #CDDC39 !default;
+$lime-500: #CDDC39 !default;
+$lime-600: #CDDC39 !default;
+$lime-700: #CDDC39 !default;
+$lime-800: #CDDC39 !default;
+$lime-900: #CDDC39 !default;
+
+
+// yellow
+$yellow-500: #FFEB3B !default;
+
+// amber
+$amber-500: #FFC107 !default;
+
+// orange
+$orange-50: #FFF3E0 !default;
+$orange-100: #FFE0B2 !default;
+$orange-200: #FFCC80 !default;
+$orange-300: #FFB74D !default;
+$orange-400: #FFA726 !default;
+$orange-500: #FF9800 !default;
+$orange-600: #FB8C00 !default;
+$orange-700: #F57C00 !default;
+$orange-800: #EF6C00 !default;
+$orange-900: #365100 !default;
+
+$orange-a100: #FFD180 !default;
+$orange-a200: #FFAB40 !default;
+$orange-a300: #FF9100 !default;
+$orange-a400: #FF7D00 !default;
+
+// deep orange
+$deep-orange-500: #FF5722 !default;
+
+// brown
+$brown-500: #795548 !default;
+
+// grey
+$grey-50: #FAFAFA !default;
+$grey-100: #F5F5F5 !default;
+$grey-200: #EEEEEE !default;
+$grey-300: #E0E0E0 !default;
+$grey-400: #BDBDBD !default;
+$grey-500: #9E9E9E !default;
+$grey-600: #757575 !default;
+$grey-700: #616161 !default;
+$grey-800: #424242 !default;
+$grey-900: #212121 !default;
+
+// blue grey
+$blue-grey-50: #ECEFF1 !default;
+$blue-grey-100: #CFD8DC !default;
+$blue-grey-200: #B0BEC5 !default;
+$blue-grey-300: #90A4AE !default;
+$blue-grey-400: #78909C !default;
+$blue-grey-500: #607D8B !default;
+$blue-grey-600: #546E7A !default;
+$blue-grey-700: #455A64 !default;
+$blue-grey-800: #37474F !default;
+$blue-grey-900: #263238 !default;
+
+
+$black: #0a0a0a !default;
+$white: #fefefe !default;

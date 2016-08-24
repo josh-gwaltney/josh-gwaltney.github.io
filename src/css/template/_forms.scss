@@ -1,0 +1,58 @@
+.form-group {
+  margin-bottom: 19px;
+  padding-top: 16px;
+  position: relative;
+}
+
+.form-control {
+  background: transparent;
+  border-bottom: 1px solid $divider-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  box-shadow: none;
+  color: $secondary-text-color;
+  display: block;
+  font-size: 16px;
+  height: 37px;
+  line-height: 1.846153846;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  width: 100%;
+}
+
+.form-control:focus{
+  border-color: map-get($primary, 'main');
+  box-shadow: none;
+  outline: 0;
+}
+
+.form-control ~ label {
+  bottom: 0;
+  font-size: 12px;
+  font-weight: 400;
+  left: 0;
+  margin-bottom: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: 0.2s ease all;
+  opacity: 0.5;
+  top: 0;
+}
+
+.form-control:focus ~ label {
+  color: map-get($primary, 'main');
+  opacity: 1;
+}
+
+.form-control.floating-label ~ label {
+  top: 19px;
+  font-size: 16px;
+}
+
+.form-control.floating-label:focus ~ label,
+.form-control.floating-label:active ~ label {
+  color: map-get($primary, 'main');
+  opacity: 1;
+  top: 0px;
+  font-size: 12px;
+}
