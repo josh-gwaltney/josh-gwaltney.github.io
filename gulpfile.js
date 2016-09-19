@@ -86,7 +86,7 @@ gulp.task('compile:css', function(){
 gulp.task('compile:assets', function(){
     log('Build asset files from source');
 
-    return gulp.src(config.paths.src.assets)
+    return gulp.src(config.paths.src.assets + '*.png')
         .pipe(gulp.dest(config.paths.dist + 'assets/'));
 });
 
@@ -103,7 +103,7 @@ gulp.task('watch', function(){
 
 });
 
-gulp.task('build', ['compile:js', 'compile:css', /*'compile:assets',*/ 'inject'], function(){
+gulp.task('build', ['compile:js', 'compile:css', 'compile:assets', 'inject'], function(){
     log('Building application');
 
     return gulp.src('')
@@ -130,4 +130,3 @@ gulp.task('serve', function(){
         .on('restart', ['build', 'build:test'], function(){})
         .on('start', ['build', 'build:test'], function(){});
 });
-

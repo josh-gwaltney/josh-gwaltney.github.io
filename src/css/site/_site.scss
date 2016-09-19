@@ -201,3 +201,21 @@ header.title h3{
   }
 }
 
+#screen {
+  margin: 0 auto;
+}
+
+.navigator {
+  margin: 0 auto;
+  width: 650px;
+}
+
+.navigator .card {
+  color: $primary-text-color;
+  font-size: 20px;
+  text-align: center;
+}
+
+@import 'pathfinder/pathfinder';
+@import 'pokedex';
+@import 'sprites';

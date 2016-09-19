@@ -1,0 +1,87 @@
+.sprite {
+
+  background-image: url('assets/64130.png');
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  height: 128px;
+  width: 128px;
+
+  &.bulbasaur {
+    background-position: 0 0;
+  }
+
+  &.ivysaur {
+    background-position: -128px 0;
+  }
+
+  &.venusaur {
+    background-position: -256px 0;
+  }
+
+  &.charmander {
+    background-position: -640px 0;
+  }
+
+  &.charmeleon {
+    background-position: -766px 0;
+  }
+
+  &.charizard {
+    background-position: -894px 0;
+  }
+
+  &.squirtle {
+    background-position: 0 -128px;
+  }
+
+  &.blastoise {
+    background-position: -128px -128px;
+  }
+
+  &.wartortle {
+    background-position: -256px -128px;
+  }
+}
+
+.item {
+  background-image: url('assets/64167.png');
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+
+  &.master-ball {
+    background-position: 0 0;
+  }
+
+  &.ultra-ball {
+    background-position: -32px 0;
+  }
+
+  &.great-ball {
+    background-position: -64px 0;
+  }
+
+  &.poke-ball {
+    background-position: -96px 0;
+  }
+
+  &.safari-ball {
+    background-position: -128px 0;
+  }
+
+  &.net-ball {
+    background-position: -160px 0;
+  }
+
+  &.dive-ball {
+    background-position: -192px 0;
+  }
+
+  &.nest-ball {
+    background-position: -224px 0;
+  }
+
+  &.repeat-ball {
+    background-position: -256px 0;
+  }
+}
